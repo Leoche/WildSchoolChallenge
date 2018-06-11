@@ -1,0 +1,15 @@
+@import "./_reset";
+
+$white: "#FBFBFB";
+$black: "#334";
+
+body {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: 32px;
+    background: $black;
+    color: $white;
+}
