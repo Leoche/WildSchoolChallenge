@@ -1,0 +1,67 @@
+section#prices {
+    table {
+        width: 100%;
+        height: auto;
+        color: $white;
+
+        & thead {
+            & th {
+                background: $brand;
+                box-shadow: inset -1px 0 0 rgba($black, 0.2);
+
+                &:first-child {
+                    background: none;
+                    box-shadow: none;
+                }
+
+                &:last-child {
+                    border-radius: 0 16px 0 0;
+                }
+
+                &:nth-child(2) {
+                    border-radius: 16px 0 0 0;
+                }
+            }
+        }
+
+        & tbody {
+            & tr {
+                &:first-child th {
+                    border-radius: 16px 0 0 0;
+                    box-shadow: inset 0 -1px 0 rgba($black, 0.2);
+                }
+
+                &:last-child th {
+                    border-radius: 0 0 0 16px;
+                }
+            }
+        }
+
+        & th, td {
+            vertical-align: middle;
+            font-size: 24px;
+            text-align: center;
+            width: 20%;
+            height: 33%;
+        }
+
+        th {
+            background: rgba($brand, 0.8);
+            font-size: 18px;
+            padding: 32px 16px;
+        }
+
+        & td {
+            background: $white;
+            box-shadow: inset -1px 0 0 rgba($black, 0.2), inset 0 -1px 0 rgba($black, 0.2);
+            padding: 48px 16px;
+            color: $black;
+        }
+
+        & tr:last-child {
+            & td:last-child {
+                border-radius: 0 0 16px 0;
+            }
+        }
+    }
+}
