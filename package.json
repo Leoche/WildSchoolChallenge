@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Leoche/WildSchoolChallenge#readme",
   "devDependencies": {
+    "autoprefixer": "^8.6.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
