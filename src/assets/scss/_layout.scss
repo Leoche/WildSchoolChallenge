@@ -21,7 +21,7 @@ section {
             background: $brand;
             bottom: -8px;
             right: 0;
-            background: linear-gradient(left, rgba($brand, 0) 0%, rgba($brand, 1) 25%, rgba($brand, 1) 75%, rgba($brand, 0) 100%);
+            background: linear-gradient(to right, rgba($brand, 0) 0%, rgba($brand, 1) 25%, rgba($brand, 1) 75%, rgba($brand, 0) 100%);
         }
     }
 
