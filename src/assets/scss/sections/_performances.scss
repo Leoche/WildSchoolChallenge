@@ -1,5 +1,52 @@
 section#performances {
     & ul {
-        & li {}
+        & li {
+            float: left;
+            width: 30.33%;
+            height: auto;
+            padding: .5%;
+            margin: 1%;
+            color: $white;
+            position: relative;
+            background: $brand;
+            margin-top: 50px;
+            border-radius: 15px;
+            padding-top: 200px;
+            box-shadow: $shadow;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: -50px;
+                left: calc(50% - 105px);
+                width: 200px;
+                height: 200px;
+                background: $black $img-clown no-repeat -5px top;
+                background-size: 100%;
+                border-radius: 50%;
+                border: 10px solid $brand;
+            }
+
+            &:nth-child(2):after {
+                background: $black $img-dream no-repeat -30px top;
+            }
+
+            &:nth-child(3):after {
+                background: $black $img-lion no-repeat 3px top;
+            }
+
+            & h3 {
+                display: block;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            & p {
+                font-size: 18px;
+                line-height: 18px;
+                padding: 16px;
+                color: rgba($white, 0.6);
+            }
+        }
     }
 }

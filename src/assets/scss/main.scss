@@ -2,18 +2,24 @@
 
 @import "./_reset";
 
+// Images
+$img-header: url(https://i.imgur.com/68SZMEA.jpg);
+$img-clown: url(https://i.imgur.com/zw573OW.png);
+$img-dream: url(https://i.imgur.com/LLkU4Nf.png);
+$img-lion: url(https://i.imgur.com/JZgESfC.png);
+
 // Colors
 $white: #FBFBFB;
 $brand: #BE1F00;
 $black: #222;
-$shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+$shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.5);
 
 // Fonts
 $heading-font: "Wellfleet", sans-serif;
 $body-font: "Lato", sans-serif;
 
 // Sizes
-$desktop: 1200px;
+$desktop: 900px;
 $navbar-height: 48px;
 $footer-height: 64px;
 $footer-padding: 16px;
@@ -51,3 +57,4 @@ footer {
 // Sections
 @import "./sections/_contact";
 @import "./sections/_hero";
+@import "./sections/_performances";
