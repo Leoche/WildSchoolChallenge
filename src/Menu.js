@@ -1,6 +1,7 @@
 import Scroll from './Scroll.js'
 class Menu {
   constructor (menu) {
+    console.log('Bonjour :)')
     this.initLogo()
     this.moveable = document.createElement('div')
     this.moveable.classList = "moveable"
@@ -70,8 +71,8 @@ class Menu {
     this.resetActive()
     let a = document.querySelector("a[href='#" + this.active + "']")
     a.classList.add('active')
-    this.moveable.style.left = a.getBoundingClientRect().left - this.menu.parentElement.getBoundingClientRect().left
-    this.moveable.style.width = a.getBoundingClientRect().width
+    this.moveable.style.left = a.getBoundingClientRect().left - this.menu.parentElement.getBoundingClientRect().left + "px"
+    this.moveable.style.width = a.getBoundingClientRect().width + "px"
   }
   resetActive () {
     Array.from(this.menu.children).forEach(li => li.firstChild.classList.remove('active'))
