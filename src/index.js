@@ -1,4 +1,3 @@
-import "./assets/scss/main.scss"
 import Menu from './Menu.js'
 window.requestAnimFrame = (
   () => window.requestAnimationFrame ||
