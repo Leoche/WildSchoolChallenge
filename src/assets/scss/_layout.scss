@@ -14,21 +14,26 @@ section {
     & h2 {
         font-family: $heading-font;
         flex-grow: 2;
-        font-size: 36px;
+        font-size: 48px;
         margin: 32px 0;
         position: relative;
         display: block;
+        text-align: center;
 
         &:after {
             content: "";
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 4px;
             background: $brand;
-            bottom: 4px;
+            bottom: -8px;
             right: 0;
-            background: linear-gradient(left, rgba($brand, 0) 30%, rgba($brand, 1) 100%);
+            background: linear-gradient(left, rgba($brand, 0) 0%, rgba($brand, 1) 25%, rgba($brand, 1) 75%, rgba($brand, 0) 100%);
         }
+    }
+
+    & p {
+        margin-bottom: 16px;
     }
 }
 
