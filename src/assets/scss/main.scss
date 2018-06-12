@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Wellfleet:400,800");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,800");
 
 @import "./_reset";
 
@@ -15,8 +15,8 @@ $black: #222;
 $shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.5);
 
 // Fonts
-$heading-font: "Wellfleet", sans-serif;
-$body-font: "Lato", sans-serif;
+$heading-font: "Amatic SC", sans-serif;
+$body-font: "Amatic SC", sans-serif;
 
 // Sizes
 $desktop: 900px;
@@ -30,7 +30,8 @@ body {
 }
 
 section#aboutus p {
-    font-size: 26px;
+    font-size: 36px;
+    line-height: 36px;
 }
 
 @import "./_layout";

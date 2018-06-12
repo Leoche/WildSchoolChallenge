@@ -62,6 +62,7 @@ header {
                     display: flex;
                     height: 100%;
                     padding: 0 16px;
+                    font-size: 30px;
                     margin: 0 8px;
                     text-decoration: none;
                     color: rgba($white, 0.6);
@@ -84,7 +85,7 @@ header {
 
     &.sticky {
         & h1 {
-            font-size: 26px;
+            font-size: 36px;
             position: fixed;
             z-index: 2;
             top: 0;

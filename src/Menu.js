@@ -68,7 +68,7 @@ class Menu {
 
   setActive () {
     this.resetActive()
-    const a = document.querySelector("a[href='#" + this.active + "']")
+    let a = document.querySelector("a[href='#" + this.active + "']")
     a.classList.add('active')
     this.moveable.style.left = a.getBoundingClientRect().left - this.menu.parentElement.getBoundingClientRect().left
     this.moveable.style.width = a.getBoundingClientRect().width

@@ -7,7 +7,7 @@ section {
     & h2 {
         font-family: $heading-font;
         flex-grow: 2;
-        font-size: 48px;
+        font-size: 72px;
         margin: 32px 0 64px 0;
         position: relative;
         display: block;
@@ -47,6 +47,7 @@ footer {
 
     & p {
         display: block;
+        font-size: 28px;
         line-height: 28px;
 
         & a {
