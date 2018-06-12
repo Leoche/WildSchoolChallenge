@@ -21,7 +21,7 @@ $body-font: "Lato", sans-serif;
 // Sizes
 $desktop: 900px;
 $navbar-height: 48px;
-$footer-height: 64px;
+$footer-height: 96px;
 $footer-padding: 16px;
 
 body {
@@ -29,7 +29,7 @@ body {
     font-family: $body-font;
 }
 
-section p {
+section#aboutus p {
     font-size: 26px;
 }
 
@@ -39,3 +39,4 @@ section p {
 @import "./sections/_contact";
 @import "./sections/_hero";
 @import "./sections/_performances";
+@import "./sections/_prices";
