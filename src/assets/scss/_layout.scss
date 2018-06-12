@@ -31,9 +31,7 @@ section {
 }
 
 hr {
-    width: $desktop;
-    margin: 0 auto;
-    opacity: .2;
+    display: none;
 }
 
 footer {
@@ -45,10 +43,11 @@ footer {
     background: $black;
     box-sizing: border-box;
     color: darken($white, 50%);
-    padding: $footer-padding 24px;
+    padding: $footer-padding 64px;
 
     & p {
         display: block;
+        line-height: 28px;
 
         & a {
             color: darken($white, 20%);
