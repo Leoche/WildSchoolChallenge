@@ -1,25 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css?family=Lato|Wellfleet:400,800");
 
 @import "./_reset";
 
+// Colors
 $white: #FBFBFB;
 $brand: #BE1F00;
 $black: #222;
-$heading-font: "Montserrat", sans-serif;
+$shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+
+// Fonts
+$heading-font: "Wellfleet", sans-serif;
 $body-font: "Lato", sans-serif;
+
+// Sizes
+$desktop: 1200px;
+$navbar-height: 48px;
+$footer-height: 64px;
+$footer-padding: 16px;
 
 body {
     color: black;
     font-family: $body-font;
-}
-
-h2 {
-    font-family: $heading-font;
-    flex-grow: 2;
-    display: flex;
-    align-items: center;
-    font-size: 36px;
-    margin: 32px;
 }
 
 section p {
@@ -28,7 +29,7 @@ section p {
 
 footer {
     width: 100%;
-    height: auto;
+    height: $footer-height;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +38,7 @@ footer {
 
     & p {
         display: block;
-        padding: 16px 12px;
+        padding: $footer-padding 12px;
 
         & a {
             color: darken($white, 20%);
@@ -45,5 +46,8 @@ footer {
     }
 }
 
-@import "./_contact";
-@import "./_hero";
+@import "./_layout";
+
+// Sections
+@import "./sections/_contact";
+@import "./sections/_hero";
