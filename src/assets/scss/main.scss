@@ -3,6 +3,7 @@
 @import "./_reset";
 
 $white: #FBFBFB;
+$brand: #BE1F00;
 $black: #222;
 $heading-font: "Montserrat", sans-serif;
 $body-font: "Lato", sans-serif;
@@ -21,16 +22,20 @@ h2 {
     margin: 32px;
 }
 
+section p {
+    font-size: 26px;
+}
+
 footer {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $brand;
     color: darken($white, 30%);
 
     & p {
-        background: $black;
         display: block;
         padding: 16px 12px;
 
