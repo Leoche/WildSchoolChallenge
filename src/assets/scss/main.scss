@@ -33,25 +33,6 @@ section p {
     font-size: 26px;
 }
 
-footer {
-    width: 100%;
-    height: $footer-height;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $brand;
-    color: darken($white, 30%);
-
-    & p {
-        display: block;
-        padding: $footer-padding 12px;
-
-        & a {
-            color: darken($white, 20%);
-        }
-    }
-}
-
 @import "./_layout";
 
 // Sections
