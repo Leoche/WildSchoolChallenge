@@ -2,6 +2,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
 module.exports = {
+  entry: {
+   main: ['./src/index.js', './src/assets/scss/main.scss']
+  },
   module: {
     rules: [
       {
@@ -23,8 +26,15 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
+          MiniCssExtractPlugin.loader,
+        {
+            loader: "css-loader",
+            options: {
+                minimize: {
+                    safe: true
+                }
+            }
+        },
           'postcss-loader',
           'sass-loader',
         ],
@@ -35,6 +45,9 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
+    }),
+    new MiniCssExtractPlugin({
+      filename: "./main.css"
     })
   ]
 };
