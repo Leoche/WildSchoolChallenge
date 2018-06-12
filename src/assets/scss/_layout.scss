@@ -2,20 +2,13 @@ section {
     width: $desktop;
     margin: 0 auto;
     overflow: hidden;
-
-    &#contact {
-        height: 60vh;
-    }
-
-    &#contact {
-        height: calc(100vh - #{$footer-height * 2});
-    }
+    box-sizing: border-box;
 
     & h2 {
         font-family: $heading-font;
         flex-grow: 2;
         font-size: 48px;
-        margin: 32px 0;
+        margin: 32px 0 64px 0;
         position: relative;
         display: block;
         text-align: center;
@@ -41,4 +34,29 @@ hr {
     width: $desktop;
     margin: 0 auto;
     opacity: .2;
+}
+
+footer {
+    width: 100%;
+    height: $footer-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black;
+    box-sizing: border-box;
+    color: darken($white, 50%);
+    padding: $footer-padding 24px;
+
+    & p {
+        display: block;
+
+        & a {
+            color: darken($white, 20%);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
