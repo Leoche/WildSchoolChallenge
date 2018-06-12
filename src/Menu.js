@@ -62,6 +62,10 @@ class Menu {
     }
   }
 
+  parallaxHeader () {
+    if (this.active === null) document.querySelector('header').style.backgroundPositionY = "-"+(350 + window.pageYOffset / 4)+"px"
+  }
+
   setActive () {
     this.resetActive()
     const a = document.querySelector("a[href='#" + this.active + "']")
